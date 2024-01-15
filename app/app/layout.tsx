@@ -1,0 +1,27 @@
+import Head from 'next/head';
+import Topbar from './components/Topbar';
+import Sidebar from './components/Sidebar';
+import Overview from './overview/over/components/Overview';
+
+export default function AppLayout({
+    children,
+}: {
+    children: React.ReactNode;
+}) {
+    return (
+        <>
+            <Head>
+                <title>Brytatutors product page</title>
+                <meta property="og:title" content="Brytatutors official website" key="title" />
+            </Head>
+            <div className="bg-neutral-100 h-screen w-screen overflow-hidden flex flex-row">
+                <Sidebar />
+                <div className="flex flex-col flex-1">
+                    <Topbar />
+                    <Overview />
+                </div>
+            </div>
+            
+        </>
+    );
+}
