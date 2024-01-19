@@ -5,7 +5,7 @@ import Image from "next/image"
 
 const Topbar = () => {
   return (
-    <div>
+    <div className=''>
         <div className='bg-primary-300 h-16 px-4 flex items-center border-b border-gray-200 justify-between p-10'>
             <div className='flex items-center gap-10'>
                 <div className='font-bold text-2xl'>Hello Adewale</div>

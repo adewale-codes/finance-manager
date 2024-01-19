@@ -6,8 +6,8 @@ const page = () => {
   return (
     <div>
       <Head>
-        <title>Brytatutor</title>
-        <meta property="og:title" content="Brytatutors official website" key="title" />
+        <title>Finance</title>
+        <meta property="og:title" content="Finance official website" key="title" />
       </Head>
       <Overview />
     </div>

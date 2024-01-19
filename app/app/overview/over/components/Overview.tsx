@@ -1,7 +1,10 @@
 import React from 'react'
 import Image from 'next/image'
+import {App} from './App'
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from "recharts";
 
 const Overview = () => {
+    
   return (
     <div>
         <div className='flex md:flex-row flex-col justify-around items-center md:items-start pt-5'>
@@ -156,7 +159,7 @@ const Overview = () => {
             <div className='p-5'>
                 <div>
                     <div>
-                        <div className='flex items-center gap-32'>
+                        <div className='flex items-center gap-24'>
                             <div className='text-grays-400 text-xls'>Recent Transaction</div>
                             <div className='flex items-center gap-2'>
                                 <div className='text-grays-400 text-xs'>View All</div>
@@ -166,7 +169,91 @@ const Overview = () => {
                             </div>
                             </div>
                         </div>
-                        <div className='h-80 w-80 rounded bg-white'></div>
+                        <div className='h-1/2 py-4 w-80 rounded bg-white'>
+                            <div className="flex mx-3 gap-16">
+                                <div className="text-primary-400 font-bold border-b-2 border-primary-400">All</div>
+                                <div className="text-grays-500 font-bold">Revenue</div>
+                                <div className="text-grays-500 font-bold">Expenses</div>
+                            </div>
+                            <div className="flex gap-16 items-center border-b border-grays-600 mx-3 mt-5 pb-2">
+                                <div className="flex gap-2 items-center">
+                                    <Image src="/assets/game.svg" alt="game-icon" width={40} height={40} />
+                                    <div>
+                                        <div className="text-primary-100 font-semibold">GTR 5</div>
+                                        <div className="text-grays-300 text-xs">Gadget & Gear</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div className="text-grays-500 font-semibold">$160.00</div>
+                                    <div className="text-grays-300 font-xs">17 May 2023</div>
+                                </div>
+                            </div>
+                            <div className="flex gap-[4.5rem] items-center border-b border-grays-600 mx-3 mt-5 pb-2">
+                                <div className="flex gap-2 items-center">
+                                    <Image src="/assets/shop.svg" alt="game-icon" width={40} height={40} />
+                                    <div>
+                                        <div className="text-primary-100 font-semibold">Polo Shirt</div>
+                                        <div className="text-grays-300 text-xs">XL fashions</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div className="text-grays-500 font-semibold">$20.00</div>
+                                    <div className="text-grays-300 font-xs">17 May 2023</div>
+                                </div>
+                            </div>
+                            <div className="flex gap-[5rem] items-center border-b border-grays-600 mx-3 mt-5 pb-2">
+                                <div className="flex gap-2 items-center">
+                                    <Image src="/assets/home.svg" alt="game-icon" width={40} height={40} />
+                                    <div>
+                                        <div className="text-primary-100 font-semibold">Biriyani</div>
+                                        <div className="text-grays-300 text-xs">Hajir Biriyani</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div className="text-grays-500 font-semibold">$10.00</div>
+                                    <div className="text-grays-300 font-xs">17 May 2023</div>
+                                </div>
+                            </div>
+                            <div className="flex gap-[5rem] items-center border-b border-grays-600 mx-3 mt-5 pb-2">
+                                <div className="flex gap-2 items-center">
+                                    <Image src="/assets/transport.svg" alt="game-icon" width={40} height={40} />
+                                    <div>
+                                        <div className="text-primary-100 font-semibold">Taxi Fare</div>
+                                        <div className="text-grays-300 text-xs">Uber</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div className="text-grays-500 font-semibold">$12.00</div>
+                                    <div className="text-grays-300 font-xs">17 May 2023</div>
+                                </div>
+                            </div>
+                            <div className="flex gap-16 items-center mx-3 mt-5 pb-2">
+                                <div className="flex gap-2 items-center">
+                                    <Image src="/assets/shop.svg" alt="game-icon" width={40} height={40} />
+                                    <div>
+                                        <div className="text-primary-100 font-semibold">Keyboard</div>
+                                        <div className="text-grays-300 text-xs">Gadget & Gear</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div className="text-grays-500 font-semibold">$22.00</div>
+                                    <div className="text-grays-300 font-xs">17 May 2023</div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div className="pt-5 w-full">
+                <div>
+                    <div className='text-grays-400 text-xls'>Statistics</div>
+                </div>
+                <div className="bg-white h-1/2 p-5 mr-5">
+                    <div className="pb-5">
+                        <div className="text-primary-100 font-semibold ">Weekly Comparison</div>
+                    </div>
+                    <div>
+                        <App  />
+                    </div>
                 </div>
             </div>
         </div>

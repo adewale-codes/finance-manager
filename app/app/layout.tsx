@@ -14,11 +14,11 @@ export default function AppLayout({
                 <title>Brytatutors product page</title>
                 <meta property="og:title" content="Brytatutors official website" key="title" />
             </Head>
-            <div className="bg-neutral-100 h-screen w-screen overflow-hidden flex flex-row">
+            <div className="bg-neutral-100 overflow-hidden flex flex-row">
                 <Sidebar />
                 <div className="flex flex-col flex-1">
                     <Topbar />
-                    <Overview />
+                    {children}
                 </div>
             </div>
             
