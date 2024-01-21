@@ -159,8 +159,8 @@ const Overview = () => {
             <div className='p-5'>
                 <div>
                     <div>
-                        <div className='flex items-center gap-24'>
-                            <div className='text-grays-400 text-xls'>Recent Transaction</div>
+                        <div className='flex items-center gap-16'>
+                            <div className='text-grays-400 text-xl'>Recent Transaction</div>
                             <div className='flex items-center gap-2'>
                                 <div className='text-grays-400 text-xs'>View All</div>
                                 <div>
@@ -169,7 +169,7 @@ const Overview = () => {
                             </div>
                             </div>
                         </div>
-                        <div className='h-1/2 py-4 w-80 rounded bg-white'>
+                        <div className='h-1/2 py-4 w-80 rounded bg-white pb-11'>
                             <div className="flex mx-3 gap-16">
                                 <div className="text-primary-400 font-bold border-b-2 border-primary-400">All</div>
                                 <div className="text-grays-500 font-bold">Revenue</div>
@@ -244,17 +244,167 @@ const Overview = () => {
                 </div>
             </div>
             <div className="pt-5 w-full">
-                <div>
-                    <div className='text-grays-400 text-xls'>Statistics</div>
-                </div>
-                <div className="bg-white h-1/2 p-5 mr-5">
-                    <div className="pb-5">
-                        <div className="text-primary-100 font-semibold ">Weekly Comparison</div>
-                    </div>
-                    <div>
-                        <App  />
-                    </div>
-                </div>
+                <ul>
+                    <li>
+                        <div>
+                            <div className='text-grays-400 text-xl'>Statistics</div>
+                        </div>
+                            <div className="bg-white h-1/2 p-5 mr-5 rounded">
+                                <div className="pb-5">
+                                    <div className="text-primary-100 font-semibold ">Weekly Comparison</div>
+                                </div>
+                                <div>
+                                    <App  />
+                                </div>
+                            </div>
+                    </li>
+                    <li className="pt-5">
+                        <div className="flex justify-between mr-5 items-center">
+                            <div className='text-grays-400 text-xl'>Expenses Breakdown</div>
+                            <div className='text-grays-300 text-xs'>*Compare to last month</div>
+                        </div>
+                        <div className="bg-white h-1/2 p-5 mr-5 rounded">
+                            <div>
+                                <div className="flex gap-14 items-center border-b border-gray-200">
+                                    <div>
+                                        <div className="flex gap-5 items-center border-r border-gray-200">
+                                            <div className="flex gap-2 items-center">
+                                                <div>
+                                                    <Image src="/assets/n-housing.svg" alt="housing logo" width={40} height={56} />
+                                                </div>
+                                                <div>
+                                                    <div className="text-grays-400 font-xs">Housing</div>
+                                                    <div className="text-primary-100 font-bold">$250.00</div>
+                                                    <div className="flex gap-2 items-center">
+                                                        <div className="text-grays-300 font-xs">15%*</div>
+                                                        <div>
+                                                            <Image src="/assets/up.svg" alt="upp-arrow" width={16} height={16} />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <Image src="/assets/arrow-right.svg" alt="arrow-right" width={24} height={24} />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                    <div className="flex gap-5 items-center border-r border-gray-200">
+                                            <div className="flex gap-2 items-center">
+                                                <div>
+                                                    <Image src="/assets/n-food.svg" alt="food logo" width={40} height={56} />
+                                                </div>
+                                                <div>
+                                                    <div className="text-grays-400 font-xs">Food</div>
+                                                    <div className="text-primary-100 font-bold">$350.00</div>
+                                                    <div className="flex gap-2 items-center">
+                                                        <div className="text-grays-300 font-xs">08%*</div>
+                                                        <div>
+                                                            <Image src="/assets/down.svg" alt="upp-arrow" width={16} height={16} />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <Image src="/assets/arrow-right.svg" alt="arrow-right" width={24} height={24} />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                    <div className="flex gap-5 items-center">
+                                            <div className="flex gap-2 items-center">
+                                                <div>
+                                                    <Image src="/assets/n-transportation.svg" alt="housing logo" width={40} height={56} />
+                                                </div>
+                                                <div>
+                                                    <div className="text-grays-400 font-xs">Transportation</div>
+                                                    <div className="text-primary-100 font-bold">$50.00</div>
+                                                    <div className="flex gap-2 items-center">
+                                                        <div className="text-grays-300 font-xs">12%*</div>
+                                                        <div>
+                                                            <Image src="/assets/down.svg" alt="upp-arrow" width={16} height={16} />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <Image src="/assets/arrow-right.svg" alt="arrow-right" width={24} height={24} />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="flex gap-14 items-center border-b border-gray-200">
+                                    <div>
+                                        <div className="flex gap-5 items-center border-r border-gray-200">
+                                            <div className="flex gap-2 items-center">
+                                                <div>
+                                                    <Image src="/assets/n-housing.svg" alt="housing logo" width={40} height={56} />
+                                                </div>
+                                                <div>
+                                                    <div className="text-grays-400 font-xs">Housing</div>
+                                                    <div className="text-primary-100 font-bold">$250.00</div>
+                                                    <div className="flex gap-2 items-center">
+                                                        <div className="text-grays-300 font-xs">15%*</div>
+                                                        <div>
+                                                            <Image src="/assets/up.svg" alt="upp-arrow" width={16} height={16} />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <Image src="/assets/arrow-right.svg" alt="arrow-right" width={24} height={24} />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                    <div className="flex gap-5 items-center border-r border-gray-200">
+                                            <div className="flex gap-2 items-center">
+                                                <div>
+                                                    <Image src="/assets/n-food.svg" alt="food logo" width={40} height={56} />
+                                                </div>
+                                                <div>
+                                                    <div className="text-grays-400 font-xs">Food</div>
+                                                    <div className="text-primary-100 font-bold">$350.00</div>
+                                                    <div className="flex gap-2 items-center">
+                                                        <div className="text-grays-300 font-xs">08%*</div>
+                                                        <div>
+                                                            <Image src="/assets/down.svg" alt="upp-arrow" width={16} height={16} />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <Image src="/assets/arrow-right.svg" alt="arrow-right" width={24} height={24} />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                    <div className="flex gap-5 items-center">
+                                            <div className="flex gap-2 items-center">
+                                                <div>
+                                                    <Image src="/assets/n-transportation.svg" alt="housing logo" width={40} height={56} />
+                                                </div>
+                                                <div>
+                                                    <div className="text-grays-400 font-xs">Transportation</div>
+                                                    <div className="text-primary-100 font-bold">$50.00</div>
+                                                    <div className="flex gap-2 items-center">
+                                                        <div className="text-grays-300 font-xs">12%*</div>
+                                                        <div>
+                                                            <Image src="/assets/down.svg" alt="upp-arrow" width={16} height={16} />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <Image src="/assets/arrow-right.svg" alt="arrow-right" width={24} height={24} />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
